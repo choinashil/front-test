@@ -50,8 +50,8 @@ function ProductDetail() {
           <div>{product.name}</div>
           <div>{product.price}원</div>
           <div className="product-option-wrap">
-            <label htmlFor="option-select">옵션</label>
-            <select name="option" id="option-select">
+            <div>옵션</div>
+            <select>
               <option value="">--Please choose an option--</option>
               {product.productOptions.map((option, index) => (
                 <option key={index} value={option.id}>{option.name}</option>
